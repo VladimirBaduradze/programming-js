@@ -25,8 +25,6 @@ console.log(
     "წლით უფროსია"
 ); 
 
-v2
-
 /*
     Task 2 : 
         გვაქვს სტუდენტების სახელების მასივი ['John','Sam','Ann','Will','Andrew','Joseph','Lorelai','Amelie','Den']
