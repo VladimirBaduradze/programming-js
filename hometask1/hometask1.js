@@ -8,13 +8,22 @@
     სხვაობა დათვალეთ დინამიურად ცვლადების და არითმეტიკული ოპერატორების გამოყენებით
     დალოგეთ ზემოაღნიშნული ცვლადი . 
 */
-let name1 = 'ანა';
-let name2= 'ლევან';
+let name1 = "ანა";
+let name2 = "ლევან";
 let anaAge = 28;
 let levanAge = 21;
-let ageDifference = anaAge-levanAge;
+let ageDifference = anaAge - levanAge;
 
-console.log (`${name1}`+' '+ `${name2}`+'ზე' +' '+ ageDifference +' '+'წლით უფროსია');
+console.log(
+  `${name1}` +
+    " " +
+    `${name2}` +
+    "ზე" +
+    " " +
+    ageDifference +
+    " " +
+    "წლით უფროსია"
+);
 
 /*
     Task 2 : 
@@ -22,20 +31,19 @@ console.log (`${name1}`+' '+ `${name2}`+'ზე' +' '+ ageDifference +' '+'წ�
         დალოგეთ სიის ზუსტად შუაში მყოფი სახელი.
 
 */
-let namesArray= ['John','Sam','Ann','Will','Andrew','Joseph','Lorelai','Amelie','Den'];
-let middleArrayDefinition = namesArray[(namesArray.length-1)/2]
-console.log(middleArrayDefinition)
-
-
-
-
-
-
-
-
-
-
-
+let namesArray = [
+  "John",
+  "Sam",
+  "Ann",
+  "Will",
+  "Andrew",
+  "Joseph",
+  "Lorelai",
+  "Amelie",
+  "Den",
+];
+let middleArrayDefinition = namesArray[(namesArray.length - 1) / 2];
+console.log(middleArrayDefinition);
 
 /*
     Task 3 : 
@@ -60,31 +68,25 @@ console.log(middleArrayDefinition)
 
 */
 
-
-
 let studentCard = {
-    firstName: 'ვლადიმერ',
-    lastName: 'ბადურაძე',
+  firstName: "ვლადიმერ",
+  lastName: "ბადურაძე",
+  age: 27,
+  subjects: ["math", "programming", "english", "french", "geography"],
+  roommate: {
+    fullname: "Very Special Roommate",
     age: 27,
-    subjects: ['math', 'programming', 'english', 'french', 'geography'],
-    roommate: {
-        fullname: 'Very Special Roommate',
-        age: 27,
-    }
+  },
+};
+
+for (i = 0; i < studentCard.subjects.length; i++) {
+  console.log(studentCard.subjects[i]);
 }
 
-
-for (i=0; i<studentCard.subjects.length; i++) {
-    console.log (studentCard.subjects[i])
-}
-
-let fullName= 'ვლადიმერ ბადურაძე';
-studentCard.fullName= 'ვლადიმერ ბადურაძე';
-
+let fullName = "ვლადიმერ ბადურაძე";
+studentCard.fullName = "ვლადიმერ ბადურაძე";
 
 let result = `${studentCard.firstName} ${studentCard.lastName} არის ${studentCard.age} წლის და მისი რუმმეითი არის: ${studentCard.roommate.fullname}`;
-
-
 
 /*
     Task 4 : 
@@ -93,21 +95,32 @@ let result = `${studentCard.firstName} ${studentCard.lastName} არის ${st
         დალოგეთ ეს ელემენტი.
 
 */
-var myArray = ["Banana", "Orange", "Apple",  "Mango",2,12];
 
-for (i=0; i<myArray.length;) {
-while (typeof myArray[i] === 'string') {
-    console.log (myArray[i]);
-    i++;  
+var myArray = ["Banana", "Orange", "Apple", 'Apple2', "Mango", 2, 12,];
+
+for (i = 0; i < myArray.length; ) {
+  while (typeof myArray[i] === "string") {
+    console.log(myArray[i]);
+    i++;
+  }
+  break;
 }
-break
-}
+
+// var myArray = ["Banana", "Orange", "Apple", 'Apple2', "Mango", 2, 12,];
+// let i = 0;
+
+// while (typeof myArray[i] == 'string') {
+//   console.log (myArray[i]);
+//   i++;
+// }
 
 
-    
+// var myArray = ["Banana", "Orange", "Apple", "Mango", 2, 12, "atlas", "john"];
+// function stringsOnly(array) {
+//   return array.filter((item) => typeof item === "string");
+// }
 
-
-
+// console.log(stringsOnly(myArray));
 
 /*
     Task 5 : 
@@ -119,17 +132,23 @@ break
 
 let newArray = [12,23,43,11,9,2,121,90];
 let ourNumber = 31;
-let sortedArray= newArray.sort((a, b) => a - b);
-
+let sortedArray = newArray.sort((a, b) => a - b);
 
 for (let i = 0; i < newArray.length; i++) {
-    if (sortedArray[i]>ourNumber && sortedArray[i]%2==0) {
-        console.log (`${sortedArray[i]} is greater than ${ourNumber} and is EVEN`);
-    }
-    else if (sortedArray[i]<ourNumber && sortedArray[i]%3==0) {
-        console.log (`${sortedArray[i]} is less than ${ourNumber} and is ODD`);
-    }
-    else {
-        console.log (`${sortedArray[i]} shouldn't be considered, just pass along`)
-    }
+  if (sortedArray[i] > ourNumber && sortedArray[i] % 2 == 0) {
+    console.log(`${sortedArray[i]} is greater than ${ourNumber} and is EVEN`);
+  } else if (sortedArray[i] < ourNumber && sortedArray[i] % 3 == 0) {
+    console.log(`${sortedArray[i]} is less than ${ourNumber} and is ODD`);
+  } 
 }
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = "";
+
+// for (; cars[i]; ) {
+//   text += cars[i] + " ";
+//   i++;
+// }
+
+// console.log(text);
