@@ -23,7 +23,7 @@ console.log(
     ageDifference +
     " " +
     "წლით უფროსია"
-);
+); 
 
 /*
     Task 2 : 
