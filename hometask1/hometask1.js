@@ -45,6 +45,7 @@ let namesArray = [
 let middleArrayDefinition = namesArray[(namesArray.length - 1) / 2];
 console.log(middleArrayDefinition);
 
+
 /*
     Task 3 : 
     Part 1 : შექმენით სტუდენტის ობიექტი , რომელსაც აქვს 5 property : firstName; lastName; age; subjects; roommate;
@@ -68,7 +69,7 @@ console.log(middleArrayDefinition);
 
 */
 
-let studentCard = {
+let studentCard= {
   firstName: "ვლადიმერ",
   lastName: "ბადურაძე",
   age: 27,
